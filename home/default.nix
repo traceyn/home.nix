@@ -159,9 +159,9 @@ in
 
       workspaces = user.gitWorkspaces;
     };
-  };
 
-  # go.enable = true;
+    go.enable = true;
+  };
 
   programs.starship = {
     enable = true;
