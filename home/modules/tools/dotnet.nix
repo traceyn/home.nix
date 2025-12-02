@@ -18,7 +18,7 @@ let
       buildInputs = with pkgs; [ dotnet-sdk ];
       installPhase =
         let
-          toCommand = name: params: ''${dotnet-env}/bin/dotnet nuget add source ${params.url} --name ${name} --username ${params.userName} --password ${params.password} --store-password-in-clear-text'';
+          toCommand = name: params: ''${dotnet-env}/bin/dotnet nuget add source ${params.url} --name ${name} --username '${params.userName}' --password '${params.password}' --store-password-in-clear-text'';
           commands = lib.concatStringsSep "\n" (lib.mapAttrsToList toCommand nugetSources);
         in
         ''

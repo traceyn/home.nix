@@ -4,31 +4,15 @@
   brews.apps = {
     casks = [
       "1password"
-      "brave-browser" # better chrome
-      "discord"
-      "dropbox"
-      "google-chrome"
-      "hiddenbar"
-      "iina" # modern video player
       "jetbrains-toolbox"
-      "intellij-idea"
-      "datagrip"
-      "licecap" # animated screenshots
-      "notion"
-      "notion-calendar"
       "postman"
-      "hoppscotch" # postman alternative
-      "rider"
       "shottr" # screenshot tool
       "slack"
-      "sublime-text"
-      "telegram"
-      "vlc"
-      "warp" # AI-enabled terminal
-      "zoom"
-      "mitmproxy"
-      "thebrowsercompany-dia" # web browser with AI
-      "zed"
+      "ghosty"
+    ];
+    brews = [
+      "gh" # GitHub CLI
+      "gemini-cli"
     ];
   };
 
@@ -72,7 +56,7 @@
   };
 
   brews.rancher = {
-    enable = true;
+    enable = false;
     hostResolver = false;
   };
 
@@ -80,41 +64,6 @@
     enable = true;
   };
 
-  brews.iterm2 = {
-    enable = true;
-    theme = "catppuccin-mocha";
-    browserPlugin = {
-      enable = true;
-      name = "Browser"; # optional, defaults to "Browser"
-      shortcut = "B";   # optional, defaults to "Ctrl+Option+B"
-    };
-  };
-
-  brews.raycast = {
-    enable = true;
-  };
-
-  brews.magnet = {
-    enable = true;
-
-    commands = [
-      {
-        name = "Top Left Two Thirds";
-        id = "D902DA03-47FB-40D5-8015-3499A9EB167E";
-        shortcut = [ "Cmd" "CTRL" "." ];
-        targetArea = {
-          area = {
-            segments = [
-              {
-                id = "5DD6FE34-866B-4127-9219-346433F8AAA1";
-                frame = [ [0 0] [8 8] ];
-              }
-            ];
-          };
-        };
-      }
-    ];
-  };
 
   # Add other shared app configurations here as needed
   # brews.someOtherApp = {

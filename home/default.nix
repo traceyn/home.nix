@@ -64,6 +64,9 @@ in
       enableKeyMapping = true;
       remapCapsLockToControl = true;
     };
+    sessionVariables = {
+      EP_NUGET_SOURCE_URL = "https://nuget.pkg.github.com/EducationPerfect/index.json";
+    };
   };
 
   fonts.fontconfig.enable = true;
@@ -158,6 +161,8 @@ in
     };
   };
 
+  go.enable = true;
+
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
@@ -179,7 +184,7 @@ in
         truncate_to_repo = false;
       };
 
-      aws = { 
+      aws = {
         symbol = "☁️ ";
         region_aliases = {
           ap-southeast-2 = "au";
