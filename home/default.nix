@@ -27,7 +27,7 @@ in
     };
   };
 
-  imports = [    
+  imports = [
     ./packages.nix
     ./work
     ../brews/apps.nix
@@ -37,7 +37,7 @@ in
 
   # secureEnv.onePassword = {
   #   enable = true;
-    
+
   #   sessionVariables = {
   #     PRIVATE_GITHUB_TOKEN = {
   #       account = "my.1password.com";
@@ -161,7 +161,7 @@ in
     };
   };
 
-  go.enable = true;
+  # go.enable = true;
 
   programs.starship = {
     enable = true;
