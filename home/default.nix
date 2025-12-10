@@ -240,6 +240,10 @@ in
     # https://github.com/zsh-users/zsh-syntax-highlighting/issues/295#issuecomment-214581607
     initContent = ''
       zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+
+      export NVM_DIR="$HOME/.nvm"
+      [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh" # This loads nvm
+      [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
     '';
 
     shellAliases = {

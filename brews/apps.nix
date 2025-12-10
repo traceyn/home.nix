@@ -12,6 +12,7 @@
     brews = [
       "gh" # GitHub CLI
       "gemini-cli"
+      "nvm"
     ];
   };
 

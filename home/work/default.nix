@@ -30,23 +30,24 @@ in
   };
 
   secureEnv.onePassword = {
-    enable = false;
+    # TODO: re-enable once I have vault access and need to setup front end
+    enable = true;
     sessionVariables = {
-      EP_NUGET_SOURCE_PASS = {
-        account = "educationperfect.1password.com";
-        vault = "Employee";
-        item = "Github Token";
-        field = "password";
-        required = true; # Critical for work development
-      };
+      # EP_NUGET_SOURCE_PASS = {
+      #   account = "educationperfect.1password.com";
+      #   vault = "Employee";
+      #   item = "Github Token";
+      #   field = "password";
+      #   required = true; # Critical for work development
+      # };
 
-      EP_NUGET_SOURCE_USER = {
-        account = "educationperfect.1password.com";
-        vault = "Employee";
-        item = "Github Token";
-        field = "username";
-        required = true; # Critical for work development
-      };
+      # EP_NUGET_SOURCE_USER = {
+      #   account = "educationperfect.1password.com";
+      #   vault = "Employee";
+      #   item = "Github Token";
+      #   field = "username";
+      #   required = true; # Critical for work development
+      # };
 
     #  FUSIONAUTH_LICENCE = {
     #    account = "educationperfect.1password.com";
